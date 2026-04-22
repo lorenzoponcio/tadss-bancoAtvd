@@ -1,8 +1,7 @@
 public class RelogioSimulacao {
 
     private static long inicio;
-    private static int fator = 10; // 1 segundo simulado = 10 ms reais
-
+    private static int fator = 10; 
     public static void iniciar() {
         inicio = System.currentTimeMillis();
     }

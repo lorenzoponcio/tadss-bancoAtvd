@@ -3,7 +3,7 @@ import java.util.Random;
 public class GeradorClientes implements Runnable {
 
     private FilaClientes fila;
-    private int duracao = 7200; // 2 horas em segundos
+    private int duracao = 7200;
     private Random random = new Random();
 
     public GeradorClientes(FilaClientes fila) {
@@ -28,7 +28,7 @@ public class GeradorClientes implements Runnable {
             Cliente c = new Cliente(id++, RelogioSimulacao.tempoAtual());
             fila.adicionar(c);
 
-            //System.out.println("Cliente chegou: " + c.getId());
+            System.out.println("Cliente chegou: " + c.getId());
         }
 
         fila.setFim();

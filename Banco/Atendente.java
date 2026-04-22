@@ -36,9 +36,9 @@ public class Atendente implements Runnable {
 
             estatisticas.registrar(c);
 
-            //System.out.println(Thread.currentThread().getName() + " atendeu cliente " + c.getId());
+            System.out.println(Thread.currentThread().getName() + " atendeu cliente " + c.getId());
         }
 
-        //System.out.println(Thread.currentThread().getName() + " terminou");
+        System.out.println(Thread.currentThread().getName() + " terminou");
     }
 }
